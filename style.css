@@ -168,7 +168,82 @@ footer h2 { font-size: 2.2rem; margin-bottom: 15px; letter-spacing: -1px; }
 .footer-socials a:hover { color: white; transform: scale(1.2); filter: drop-shadow(0 0 10px var(--accent)); }
 .copyright { font-size: 0.7rem; color: #444; margin-top: 40px; text-transform: uppercase; letter-spacing: 1px; }
 
-@media (max-width: 768px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    .project-card { flex-direction: column; }
+@media (max-width: 968px) {
+    /* Adjust Navigation for Mobile */
+    nav {
+        padding: 15px 0;
+    }
+
+    .nav-flex {
+        flex-direction: column; /* Stacks Logo above Links */
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: flex; /* Makes sure they are visible */
+        flex-wrap: wrap; /* Allows them to go to a second line if the phone is very small */
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 0.65rem; /* Smaller text for mobile */
+        padding: 6px 10px;
+        letter-spacing: 1px;
+    }
+
+    /* Adjust Hero Section for Mobile */
+    header { 
+        padding: 120px 0 40px; 
+    }
+
+    .hero-grid { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .hero-text { 
+        order: 2; 
+    }
+
+    .hero-image-container { 
+        order: 1; 
+        height: 320px; 
+        margin-bottom: 20px;
+    }
+
+    .hero-shape { 
+        width: 260px; 
+        height: 260px; 
+    }
+
+    .hero-img { 
+        max-width: 280px; 
+        height: 110%; 
+    }
+
+    .bio-text { 
+        margin: 0 auto 30px; 
+        font-size: 0.9rem;
+    }
+
+    .hero-social-grid { 
+        justify-content: center; 
+    }
+
+    /* Cards on Mobile */
+    .project-card { 
+        flex-direction: column; 
+        text-align: left;
+        padding: 25px;
+    }
+
+    .project-info h3 { 
+        font-size: 1.3rem; 
+        max-width: 100%;
+    }
+
+    .project-number { 
+        display: none; 
+    }
 }
