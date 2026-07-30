@@ -84,7 +84,7 @@ nav {
 }
 
 /* Hero Section */
-header { padding: 160px 0 60px; }
+header { padding: 200px 0 40px; }
 .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 60px; }
 .glow-badge { border: 1px solid var(--accent); padding: 6px 16px; border-radius: 50px; font-size: 0.65rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; display: inline-block; animation: pulse-glow 2s infinite; }
 @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.4); } 50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.7); } }
@@ -97,7 +97,7 @@ h1:hover { letter-spacing: 2px; transform: translateY(-5px); }
 .social-btn:hover { background: rgba(59, 130, 246, 0.15); border-color: var(--accent); transform: translateY(-3px); }
 
 /* Image */
-.hero-image-container { position: relative; display: flex; justify-content: center; align-items: flex-end; height: 420px; }
+.hero-image-container { position: relative; display: flex; margin-top: 40px; justify-content: center; align-items: flex-end; height: 420px; }
 .hero-shape { position: absolute; width: 380px; height: 380px; background: var(--accent); border-radius: 50%; bottom: 0; opacity: 0.85; box-shadow: 0 0 50px rgba(59,130,246,0.3); }
 .hero-img { position: relative; height: 112%; z-index: 2; object-fit: contain; -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
 
